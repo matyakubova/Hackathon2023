@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="maket3.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="image/image0 (1) 1.png" alt="" />
+        </div>
+        <div class="vector">
+          <img src="image/Vector.png" alt="">
+        </div>
+        <div class="menu">
+          <nav>
+            <a href="">О нас</a>
+            <a href="">Каталог</a>
+            <a href="">Магазины</a>
+            <a href="">Корзина</a>
+            <a href="">Войти</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="startup">
+      <div class="container">
+        <h2>Арт базар - мир уникальных изделий</h2>
+        <p>Продавать и покупать с нами легче</p>
+        <div class="button">
+          <a href="">Зарегистрироваться</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+    <section class="post">
+      <div class="container">
+        <div class="featured">
+          <h2>О нас</h2>
+          <div class="content">
+            <p class="duis">
+              Арт базар - место, где вы можете найти уникальные изделия,
+              созданные руками творческих людей нашей страны.
+            </p>
+            <p class="duis">
+              Арт базар - место, где мастера могут найти единомышленников и
+              выгодно продать свой товар.
+            </p>
+            <div class="button">
+              <a href="">Перейти в каталог</a>
+            </div>
+          </div>
+        </div>
+        <div class="all">
+          <div class="title">
+                        <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img
+                  src="image/20220508_155055.jpg"
+                  style="width: 100%"
+                />
+              </div>
+      
+              <div class="mySlides fade">
+                <img
+                  src="image/image 2.png"
+                  style="width: 100%"
+                />
+              </div>
+      
+               <div class="mySlides fade">
+                <img
+                  src="image/case.jpg"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="mySlides fade">
+                <img
+                  src="image/krug.jpg"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="mySlides fade">
+                <img
+                  src="image/nar.jpg"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div
+        class="footer-content">
+        <div class="about">
+          <div
+            class="about-links">
+            <a href="#">О нас</a>
+            <a href="#">Каталог</a>
+            <a href="#">Магазины</a>
+            <a href="#">Профиль</a>
+          </div>
+          <div class="contacts" style="width: 50%">
+            <div class="contacts-email">
+              <h5>Почта</h5>
+              <p>artbazar@gmail.com</p>
+            </div>
+            <div class="contacts-phone">
+              <h5>Телефон</h5>
+              <p>+99363333333</p>
+            </div>
+          </div>
+        </div>
+        <div class="about about2">
+          <div class="name-social">Социальные сети</div>
+          <div class="socium">
+            <div class="soc1">
+              <div class="insta"><img src="image/Group 48.png" alt="" />@artbazar</div>
+              <div class="insta"><img src="image/Group 49.png" alt="" />@artbazar</div>
+              <div class="insta"><img src="image/Group 50.png" alt="" />@artbazar</div>
+            </div>
+            <div class="soc2">
+              <div class="insta"><img src="image/Group 48.png" alt="" />@artbazar</div>
+              <div class="insta"><img src="image/Group 49.png" alt="" />@artbazar</div>
+              <div class="insta"><img src="image/Group 50.png" alt="" />@artbazar</div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+     
+    </footer>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+   
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); 
+  }
+}
+
+</script>
+  </body>
+</html>
